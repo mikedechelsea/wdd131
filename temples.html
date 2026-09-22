@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD 131</title>
+    <meta name="description" content="A responsive album featuring beautiful temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Mike Asiabaka">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-title" href="temples.html">Temple Album</a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+                ☰
+            </button>
+
+            <nav id="primary-nav" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#old">Old</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#large">Large</a></li>
+                    <li><a href="#small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <div class="temple-grid">
+            <figure id="old">
+                <img src="images/salt-lake-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure id="new">
+                <img src="images/rome-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure id="large">
+                <img src="images/washinton-temple.jpeg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/ghana-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/laie-hawai-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/paris-france-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/london-england-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/johannesburg-south-africa-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
+
+            <figure id="small">
+                <img src="images/manila-philippines-temple.jpg"
+                     alt="Temple building"
+                     loading="lazy">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            ⭐ Mike Asiabaka 🌸 Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
