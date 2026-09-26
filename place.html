@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria – Abuja</title>
+    <link rel="stylesheet" href="styles/country.css">
+    <script src="scripts/country.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+        <p class="tagline">The Giant of Africa</p>
+    </header>
+
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-large-abuja.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium-abuja.webp" media="(min-width: 500px)">
+            <img src="images/hero-small-abuja.webp" alt="Aerial view of Abuja, Nigeria's capital city" width="1500" height="750">
+        </picture>
+    </div>
+
+    <main>
+        <section class="overview">
+            <h2>About Nigeria</h2>
+            <p>Nigeria is the most populous country in Africa and the seventh most populous in the world, with over 220 million people. Located in West Africa, it is home to more than 250 ethnic groups and a rich cultural heritage spanning thousands of years.</p>
+            <p>Abuja, the federal capital, is a planned city that became Nigeria's capital in 1991. Situated in the heart of the country, it is known for its modern architecture, wide boulevards, and the iconic Aso Rock.</p>
+        </section>
+
+        <section class="details">
+            <h2>Quick Facts</h2>
+            <ul>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Population:</strong> ~220 million</li>
+                <li><strong>Official Language:</strong> English</li>
+                <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+                <li><strong>Area:</strong> 923,768 km²</li>
+                <li><strong>Continent:</strong> Africa</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2 class="weather-heading">Weather</h2>
+            <div class="weather-icon-mobile">
+                <img src="images/weather.svg.svg" alt="Sunny weather icon">
+            </div>
+            <div class="weather-info">
+                <p><strong>Location:</strong> Abuja, Nigeria</p>
+                <p><strong>Temperature:</strong> <span id="temperature">30</span> °C</p>
+                <p><strong>Wind Speed:</strong> <span id="windspeed">10</span> km/h</p>
+                <p><strong>Conditions:</strong> Sunny and warm</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nigeria Country Page</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
