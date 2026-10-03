@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD 131</title>
+    <meta name="description" content="A responsive, filterable album featuring beautiful temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Mike Asiabaka">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-title" href="filtered-temples.html">Temple Album</a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+                ☰
+            </button>
+
+            <nav id="primary-nav" class="navigation">
+                <ul>
+                    <li><a href="#" data-filter="home" class="active">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="filter-heading">All Temples</h1>
+        <div class="temple-grid" id="temple-grid"></div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            ⭐ Mike Asiabaka 🌸 Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
