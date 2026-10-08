@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan – DataStart</title>
+  <meta name="author" content="Mike Asiabaka">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">📊</div>
+    <h1>DataStart</h1>
+    <p class="tagline">Site Plan — WDD 131 Final Project</p>
+  </header>
+
+  <main>
+
+    <!-- ── Site Name ─────────────────────────────────────────────── -->
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>DataStart</strong></p>
+      <p>
+        This name combines "Data" — the subject of the site — with "Start", communicating
+        that the site is a beginning point for anyone new to the field. It is short,
+        memorable, and clearly signals the beginner-friendly focus of the content.
+      </p>
+      <p>Optional domain availability: <em>datastartlearn.com</em></p>
+    </section>
+
+    <!-- ── Site Purpose ──────────────────────────────────────────── -->
+    <section>
+      <h2>Site Purpose</h2>
+      <p>
+        DataStart is an informational learning resource designed to introduce beginners
+        to data analytics. The site covers what data analytics is, the stages of the
+        analysis process, popular tools (SQL, Python, Power BI, Tableau), and a
+        structured learning roadmap for people who want to start a career in the field.
+      </p>
+      <p>The site consists of three main pages:</p>
+      <ul>
+        <li><strong>Introduction to Data Analytics</strong> — core concepts, types of
+            analytics, and the typical analysis workflow.</li>
+        <li><strong>Data Analytics Tools and Skills</strong> — overview of key tools
+            and the skills beginners should develop.</li>
+        <li><strong>Beginner's Learning Roadmap</strong> — a step-by-step learning
+            path, practice project ideas, and an interactive goal-setting form.</li>
+      </ul>
+      <p>
+        Interactive JavaScript features will allow visitors to filter tool cards,
+        track a skills checklist, monitor learning progress, and receive a personalized
+        summary of their learning goals.
+      </p>
+    </section>
+
+    <!-- ── Scenarios ─────────────────────────────────────────────── -->
+    <section>
+      <h2>Scenarios</h2>
+      <p>Questions a typical beginner visitor might ask when landing on the site:</p>
+      <ol>
+        <li>
+          I keep hearing about data analytics but I am not sure what it actually
+          involves — where do I even begin?
+        </li>
+        <li>
+          I have heard of Python, SQL, and Power BI — which one should I learn
+          first as a complete beginner with no coding background?
+        </li>
+        <li>
+          I want to break into data analytics within six months — what is a
+          realistic step-by-step plan I can follow on my own?
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── Color Schema ───────────────────────────────────────────── -->
+    <section>
+      <h2>Color Schema</h2>
+      <div class="color-swatches">
+
+        <div class="swatch">
+          <div class="swatch-box" style="background-color:#1a3c5e;"></div>
+          <div class="swatch-info">
+            <strong>Deep Navy</strong>
+            <span>#1a3c5e</span>
+            <em>Header background, section headings, footer</em>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-box" style="background-color:#2e86c1;"></div>
+          <div class="swatch-info">
+            <strong>Medium Blue</strong>
+            <span>#2e86c1</span>
+            <em>Links, section left-border accents, buttons</em>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-box" style="background-color:#f0f4f8;"></div>
+          <div class="swatch-info">
+            <strong>Light Blue-Grey</strong>
+            <span>#f0f4f8</span>
+            <em>Page background</em>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-box" style="background-color:#ffffff; border:1px solid #ccc;"></div>
+          <div class="swatch-info">
+            <strong>White</strong>
+            <span>#ffffff</span>
+            <em>Section / card backgrounds</em>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-box" style="background-color:#c8a227;"></div>
+          <div class="swatch-info">
+            <strong>Gold</strong>
+            <span>#c8a227</span>
+            <em>Callout borders, highlights, icons</em>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-box" style="background-color:#1c2b3a;"></div>
+          <div class="swatch-info">
+            <strong>Near-Black</strong>
+            <span>#1c2b3a</span>
+            <em>Body copy</em>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Typography ─────────────────────────────────────────────── -->
+    <section>
+      <h2>Typography</h2>
+      <div class="type-samples">
+
+        <div>
+          <label>Heading font — Merriweather (serif)</label>
+          <p class="sample-heading">Introduction to Data Analytics</p>
+          <p style="font-size:0.8rem;color:#5a7184;margin-top:0.2rem;">
+            Used for: page titles, section headings (h1–h3)
+          </p>
+        </div>
+
+        <div>
+          <label>Body font — Roboto (sans-serif)</label>
+          <p class="sample-body">
+            Data analytics is the process of examining datasets to draw conclusions
+            and support better decision-making.
+          </p>
+          <p style="font-size:0.8rem;color:#5a7184;margin-top:0.2rem;">
+            Used for: paragraphs, navigation, labels, captions
+          </p>
+        </div>
+
+        <div>
+          <label>Accent / code font — Courier New (monospace)</label>
+          <p><code class="sample-mono">SELECT * FROM sales WHERE year = 2024;</code></p>
+          <p style="font-size:0.8rem;color:#5a7184;margin-top:0.2rem;">
+            Used for: code snippets, tool-name badges, technical labels
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Wireframes ─────────────────────────────────────────────── -->
+    <section>
+      <h2>Wireframes — Home Page</h2>
+      <div class="wireframes">
+
+        <!-- Mobile -->
+        <div>
+          <p class="wireframe-label">Mobile view (≤ 480 px)</p>
+          <div class="wf-mobile">
+            <div class="wf-bar">DataStart ☰</div>
+            <div class="wf-hero">Hero / Tagline<br>[ Start Learning Button ]</div>
+            <div class="wf-section">
+              <div class="wf-block">What is Data Analytics?</div>
+              <div class="wf-block">Why It Matters</div>
+            </div>
+            <div class="wf-section">
+              <div class="wf-block">Tool Card 1</div>
+              <div class="wf-block">Tool Card 2</div>
+              <div class="wf-block">Tool Card 3</div>
+            </div>
+            <div class="wf-section">
+              <div class="wf-block">Learning Roadmap Preview</div>
+              <div class="wf-block">[ View Roadmap ]</div>
+            </div>
+            <div class="wf-footer">Footer — © DataStart</div>
+          </div>
+        </div>
+
+        <!-- Desktop -->
+        <div>
+          <p class="wireframe-label">Desktop view (≥ 800 px)</p>
+          <div class="wf-desktop">
+            <div class="wf-bar">DataStart &nbsp;&nbsp; Home | Tools | Roadmap</div>
+            <div class="wf-hero" style="padding:1.5rem 1rem;">
+              Hero — Full-width banner<br>[ Tagline ] &nbsp; [ Start Learning Button ]
+            </div>
+            <div class="wf-grid" style="grid-template-columns:1fr 1fr;">
+              <div class="wf-card" style="padding:0.6rem;">What is Data Analytics?</div>
+              <div class="wf-card" style="padding:0.6rem;">Why It Matters</div>
+            </div>
+            <div class="wf-grid">
+              <div class="wf-card">SQL</div>
+              <div class="wf-card">Python</div>
+              <div class="wf-card">Power BI</div>
+            </div>
+            <div class="wf-section">
+              <div class="wf-block">Learning Roadmap Preview Strip — [ View Roadmap ]</div>
+            </div>
+            <div class="wf-footer">Footer — © DataStart &nbsp;|&nbsp; Mike Asiabaka</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mike Asiabaka &mdash; WDD 131 Site Plan</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
