@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Roadmap | DataStart</title>
+  <meta name="description" content="A structured five-phase learning roadmap for aspiring data analysts, with practice project ideas and a personalized goal-setting form.">
+  <meta name="author" content="Mike Asiabaka">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/roadmap.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="DataStart home">
+        <span class="brand-icon" aria-hidden="true">📊</span>
+        <span class="brand-name">DataStart</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="tools.html">Tools &amp; Skills</a></li>
+          <li><a href="roadmap.html">Learning Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Page introduction">
+    <h1>Beginner's Learning Roadmap</h1>
+    <p>A clear, achievable five-phase path from complete beginner to job-ready data analyst — with milestones and projects at every step.</p>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Overall progress -->
+    <section class="section">
+      <h2 class="section-title">Your Progress</h2>
+      <p class="section-intro">Check off each phase as you complete it. Your progress is automatically saved in your browser.</p>
+      <div class="progress-bar-wrap" aria-hidden="true">
+        <div id="overall-progress-bar" role="progressbar" aria-label="Overall roadmap progress"></div>
+      </div>
+      <p id="overall-progress-label" style="font-size:0.82rem;color:var(--muted);margin-bottom:1.5rem;"></p>
+
+      <!-- Phases rendered by roadmap.js -->
+      <div id="phases-container"></div>
+    </section>
+
+    <!-- Practice projects -->
+    <section class="section">
+      <h2 class="section-title">Practice Project Ideas</h2>
+      <p class="section-intro">
+        Building real projects is the fastest way to reinforce your skills and create a portfolio that stands out to employers.
+        Here are four beginner-friendly project ideas you can start with free public data.
+      </p>
+      <div class="project-cards">
+
+        <div class="project-card">
+          <h4>💰 Personal Finance Tracker</h4>
+          <p>Download your bank statements as a CSV file, import them into Excel or Python, and analyze your spending by category over three months. Create a simple dashboard showing where your money goes.</p>
+        </div>
+
+        <div class="project-card">
+          <h4>⚽ Sports Statistics Analysis</h4>
+          <p>Choose a sport you enjoy and find a dataset on Kaggle or FBref.com. Use SQL or Python to explore player and team performance trends, then visualize your findings in a chart or dashboard.</p>
+        </div>
+
+        <div class="project-card">
+          <h4>🌍 COVID-19 Data Dashboard</h4>
+          <p>Use the publicly available Our World in Data COVID-19 dataset to visualize case trends, vaccination rates, or regional comparisons over time. This is a well-structured dataset ideal for beginners.</p>
+        </div>
+
+        <div class="project-card">
+          <h4>🛒 E-commerce Sales Report</h4>
+          <p>Download a sample retail dataset from Kaggle and use SQL and a visualization tool to identify top-selling products, busiest sales periods, and regional sales differences.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Goal form -->
+    <section class="section">
+      <h2 class="section-title">Set Your Learning Goals</h2>
+      <p class="section-intro">
+        Answer a few quick questions and receive a personalized recommendation based on your background, goals, and available study time.
+      </p>
+
+      <div class="form-card">
+        <form id="goal-form" novalidate>
+
+          <!-- Name -->
+          <div class="field-group">
+            <label for="goal-name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="goal-name" name="goal-name" autocomplete="given-name"
+              placeholder="e.g. Amara">
+          </div>
+
+          <!-- Experience level -->
+          <div class="field-group">
+            <label for="experience-level">Current Experience Level <span aria-hidden="true">*</span></label>
+            <select id="experience-level" name="experience-level" required>
+              <option value="" disabled selected>Select your level...</option>
+              <option value="complete-beginner">Complete beginner — no analytics experience</option>
+              <option value="some-excel">Some Excel or spreadsheet experience</option>
+              <option value="know-sql">I can write basic SQL queries</option>
+              <option value="know-python">I can write Python scripts</option>
+            </select>
+          </div>
+
+          <!-- Primary goal -->
+          <fieldset class="field-group">
+            <legend>Primary Goal <span aria-hidden="true">*</span></legend>
+            <div class="radio-list">
+              <label>
+                <input type="radio" name="primary-goal" value="job" required>
+                Get a job in data analytics
+              </label>
+              <label>
+                <input type="radio" name="primary-goal" value="current-job">
+                Use data skills in my current job
+              </label>
+              <label>
+                <input type="radio" name="primary-goal" value="personal">
+                Personal curiosity and side projects
+              </label>
+              <label>
+                <input type="radio" name="primary-goal" value="academic">
+                Academic or research purposes
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Topics -->
+          <fieldset class="field-group">
+            <legend>Topics You Want to Learn <span class="optional">(Check all that apply)</span></legend>
+            <div class="checkbox-list-form">
+              <label><input type="checkbox" name="topics" value="SQL"> SQL</label>
+              <label><input type="checkbox" name="topics" value="Python"> Python</label>
+              <label><input type="checkbox" name="topics" value="Excel"> Microsoft Excel</label>
+              <label><input type="checkbox" name="topics" value="Power BI or Tableau"> Power BI or Tableau</label>
+              <label><input type="checkbox" name="topics" value="Statistics"> Statistics</label>
+              <label><input type="checkbox" name="topics" value="Machine Learning"> Machine Learning</label>
+            </div>
+          </fieldset>
+
+          <!-- Hours per week -->
+          <div class="field-group">
+            <label for="hours-per-week">Study Time Available Per Week <span aria-hidden="true">*</span></label>
+            <select id="hours-per-week" name="hours-per-week" required>
+              <option value="" disabled selected>Select hours per week...</option>
+              <option value="1-3">1–3 hours</option>
+              <option value="4-7">4–7 hours</option>
+              <option value="8-14">8–14 hours</option>
+              <option value="15+">15 or more hours</option>
+            </select>
+          </div>
+
+          <input type="submit" class="btn-submit" value="Get My Personalized Plan">
+
+        </form>
+
+        <!-- Result output -->
+        <div id="result-box" role="region" aria-live="polite" aria-label="Personalized learning plan"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Mike Asiabaka &mdash; DataStart | WDD 131</p>
+    <p><a href="references.html">References</a></p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
