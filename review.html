@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted | WDD 131</title>
+  <meta name="author" content="Mike Asiabaka">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <div class="confirm-card">
+
+      <div class="checkmark">&#10003;</div>
+      <h2>Thank you for your review!</h2>
+      <p>Your feedback has been received successfully.</p>
+
+      <div class="counter-box">
+        <strong id="review-count">—</strong>
+        review(s) submitted on this device
+      </div>
+
+      <table class="summary-table">
+        <tbody>
+          <tr>
+            <th>Product</th>
+            <td id="rv-product">—</td>
+          </tr>
+          <tr>
+            <th>Rating</th>
+            <td id="rv-rating">—</td>
+          </tr>
+          <tr>
+            <th>Date of Installation</th>
+            <td id="rv-date">—</td>
+          </tr>
+          <tr>
+            <th>Useful Features</th>
+            <td id="rv-features">—</td>
+          </tr>
+          <tr>
+            <th>Written Review</th>
+            <td id="rv-review">—</td>
+          </tr>
+          <tr>
+            <th>Reviewer</th>
+            <td id="rv-username">—</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a class="back-link" href="form.html">&larr; Submit another review</a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &#11088; Mike Asiabaka &#127800; Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review | WDD 131</title>
+  <meta name="author" content="Mike Asiabaka">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <div class="form-card">
+      <form method="get" action="review.html">
+
+        <!-- Product Name -->
+        <div class="field-group">
+          <label for="product-name">Product Name</label>
+          <select id="product-name" name="product-name" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+            <!-- options injected by form.js -->
+          </select>
+        </div>
+
+        <!-- Overall Rating -->
+        <fieldset class="rating field-group">
+          <legend>Overall Rating</legend>
+          <div class="star-row">
+            <label class="star-option">
+              <span>&#9734;</span>
+              <input type="radio" id="rating-1" name="rating" value="1" required>
+            </label>
+            <label class="star-option">
+              <span>&#9734;&#9734;</span>
+              <input type="radio" id="rating-2" name="rating" value="2">
+            </label>
+            <label class="star-option">
+              <span>&#9734;&#9734;&#9734;</span>
+              <input type="radio" id="rating-3" name="rating" value="3">
+            </label>
+            <label class="star-option">
+              <span>&#9734;&#9734;&#9734;&#9734;</span>
+              <input type="radio" id="rating-4" name="rating" value="4">
+            </label>
+            <label class="star-option">
+              <span>&#9734;&#9734;&#9734;&#9734;&#9734;</span>
+              <input type="radio" id="rating-5" name="rating" value="5">
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <div class="field-group">
+          <label for="install-date">Date of Installation</label>
+          <input type="date" id="install-date" name="install-date" required>
+        </div>
+
+        <!-- Useful Features -->
+        <div class="field-group">
+          <p class="field-group" style="font-weight:700;font-size:0.9rem;margin-bottom:0.1rem;">
+            Which features did you find useful in the product?
+          </p>
+          <p class="check-hint">(Check all that apply)</p>
+          <div class="checkbox-list">
+            <label>
+              <input type="checkbox" id="feat-durability" name="features" value="Durability">
+              Durability
+            </label>
+            <label>
+              <input type="checkbox" id="feat-ease" name="features" value="Ease of Use">
+              Ease of Use
+            </label>
+            <label>
+              <input type="checkbox" id="feat-performance" name="features" value="Performance">
+              Performance
+            </label>
+            <label>
+              <input type="checkbox" id="feat-design" name="features" value="Design">
+              Design
+            </label>
+          </div>
+        </div>
+
+        <!-- Written Review -->
+        <div class="field-group">
+          <label for="written-review">
+            Written Review <span class="optional">(Optional)</span>
+          </label>
+          <textarea id="written-review" name="written-review"></textarea>
+        </div>
+
+        <!-- User Name -->
+        <div class="field-group">
+          <label for="username">
+            Your Name <span class="optional">(Optional)</span>
+          </label>
+          <input type="text" id="username" name="username" autocomplete="name">
+        </div>
+
+        <!-- Submit -->
+        <input type="submit" class="btn-submit" value="Post Review">
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &#11088; Mike Asiabaka &#127800; Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

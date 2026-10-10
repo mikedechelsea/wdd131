@@ -1,0 +1,292 @@
+/* ── Variables ───────────────────────────────────────────────── */
+:root {
+  --purple-dark:  #3b1f5e;
+  --purple-mid:   #6b3fa0;
+  --purple-light: #e8e0f0;
+  --purple-pale:  #f4f0f9;
+  --text:         #1c1c2e;
+  --muted:        #6b6b8a;
+  --accent:       #2e86c1;
+  --success:      #2d7a4f;
+  --border:       #c5b8d8;
+  --radius:       6px;
+  --font-head:    'Merriweather', Georgia, serif;
+  --font-body:    'Roboto', Arial, sans-serif;
+}
+
+/* ── Reset ───────────────────────────────────────────────────── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--purple-light);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+header {
+  background-color: var(--purple-dark);
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+header h1 {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ── Main ────────────────────────────────────────────────────── */
+main {
+  flex: 1;
+  width: min(520px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
+/* ── Form card ───────────────────────────────────────────────── */
+.form-card {
+  background-color: var(--purple-pale);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+}
+
+/* ── Field groups ────────────────────────────────────────────── */
+.field-group {
+  margin-bottom: 1.25rem;
+}
+
+.field-group label,
+.field-group legend {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+  color: var(--text);
+}
+
+.optional {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-left: 0.3rem;
+}
+
+/* ── Inputs / select / textarea ──────────────────────────────── */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  appearance: auto;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--purple-mid);
+  outline-offset: 1px;
+  border-color: var(--purple-mid);
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* ── Star rating ─────────────────────────────────────────────── */
+fieldset.rating {
+  border: none;
+}
+
+fieldset.rating legend {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.star-row {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.star-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.star-option span {
+  font-size: 1rem;
+  color: var(--purple-mid);
+  line-height: 1;
+}
+
+.star-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--purple-mid);
+  cursor: pointer;
+}
+
+/* ── Checkboxes ──────────────────────────────────────────────── */
+.check-hint {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.checkbox-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-list input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--purple-mid);
+  flex-shrink: 0;
+}
+
+/* ── Submit button ───────────────────────────────────────────── */
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  background-color: #e0dce8;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover,
+.btn-submit:focus-visible {
+  background-color: var(--purple-mid);
+  color: #fff;
+  outline: 2px solid var(--purple-dark);
+  outline-offset: 2px;
+}
+
+/* ── Confirmation page ───────────────────────────────────────── */
+.confirm-card {
+  background-color: var(--purple-pale);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.confirm-card .checkmark {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.confirm-card h2 {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  color: var(--purple-dark);
+  margin-bottom: 0.75rem;
+}
+
+.confirm-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.counter-box {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--purple-dark);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+
+.counter-box strong {
+  font-size: 1.4rem;
+  display: block;
+  line-height: 1.2;
+}
+
+.summary-table {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary-table th {
+  font-weight: 700;
+  color: var(--purple-dark);
+  width: 40%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.back-link:hover { text-decoration: underline; }
+
+/* ── Footer ──────────────────────────────────────────────────── */
+footer {
+  background-color: var(--purple-dark);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+footer p + p { margin-top: 0.3rem; }
+
+#lastModified {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
